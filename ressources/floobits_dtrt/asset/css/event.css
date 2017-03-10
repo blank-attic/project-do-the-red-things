@@ -2,6 +2,24 @@
 Rouge - #D8261A
 Jaune - #F7D530
 */
+
+/* BASE BORDER IMAGE */
+/* BASE BORDER IMAGE */
+/* BASE BORDER IMAGE */
+
+body {
+  /*border-style: solid;
+  border-width: 27px;
+  -moz-border-image: url(asset/img/fanions_base.png) 27 repeat;
+  -webkit-border-image: url(asset/img/fanions_base.png) 27 repeat;
+  -o-border-image: url(asset/img/fanions_base.png) 27 repeat;
+  border-image: url(asset/img/fanions_base.png) 27 fill repeat;*/
+}
+
+h1 {
+  font-family: Cubano-Regular;
+}
+
 .main-event {
   list-style: none;
   display: -webkit-box;

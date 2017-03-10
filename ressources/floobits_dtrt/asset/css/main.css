@@ -3,6 +3,11 @@ Rouge - #D8261A
 Jaune - #F7D530
 */
 
+@font-face {
+  font-family: Cubano-Regular;
+  src: url("asset/fonts/Cubano/Cubano-Regular.otf") format("opentype");
+}
+
 body {
   height: auto;
   width: auto;
@@ -13,8 +18,23 @@ body {
 header {
   width: auto;
   display: flex;
+  background-color: #1F211E;
+  margin-bottom: 50px;
 }
 
+.jumbotron{
+  margin-left:-10px;
+  margin-top:-10px;
+  height:100%;
+  min-width:100%;
+  display: flex;
+}
+
+.jumbotron img{
+  height:100%;
+  width:100%;
+  max-width:100%;
+}
 
 /*NAAAVIGATION*/
 /*NAAAVIGATION*/
@@ -36,22 +56,32 @@ nav {
 
 .main-nav a {
   margin-right: 15px;
-  border-radius: 5px;
-  /*border: 1px #6C5A49 solid;*/
-  background: #221E22;
-  color: #fff;
+  color:  #FFFFFF;
   display: block;
+  border-bottom: 2px solid #AA2E11;
   padding: 10px;
   text-decoration: none;
-  /*font-family: 'Rubik Mono One', sans-serif;*/
-  /*font-family: cubano, sans-serif;*/
-  font-size: 12px;
+  font-size: 20px;
+  font-family : Cubano-Regular;
 }
 
 .logo {
   width: 290px;
   height: 80px;
 }
+
+/* BASE BORDER IMAGE */
+/* BASE BORDER IMAGE */
+/* BASE BORDER IMAGE */
+
+/*#borderimg {
+border: 10px solid transparent;
+padding: 15px;
+-webkit-border-image: url(asset/img/fanions_base.png) 30 round;
+-o-border-image: url(asset/img/fanions_base.png) 30 round;
+border-image: url(asset/img/fanions_base.png) 30 round;
+}*/
+
 
 p {
   font-family: 'Open Sans', sans-serif;
@@ -60,117 +90,109 @@ p {
 
 .P-1{
   /*border-width: 2px;*/
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   /*border-style: solid;*/
   /*border-color: #D8261A #D8261A;*/
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #221E22;
-  color: #F7D530;
+  color: #FFFFFF;
 }
 
 .P-2{
   /*border-width: 2px;*/
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   /*border-style: solid;
   border-color: #D8261A #D8261A;*/
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #221E22;
-  color: #F7D530;
+  color: #FFFFFF;
 }
 
 .P-3{
   /*border-width: 2px;*/
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   /*border-style: solid;
   border-color: #D8261A #D8261A;*/
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #221E22;
-  color: #F7D530;
+  color: #FFFFFF;
 }
 
 .P-4{
   border-width: 2px;
-  border-radius: 10px;
+    /*border-radius: 10px;*/;
   border-style: solid;
   border-color: #D8261A #D8261A;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #221E22;
-  color: #F7D530;
+  color: #FFFFFF;
 }
 
 .P-5{
   bborder-width: 2px;
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   border-style: solid;
   border-color: #D8261A #D8261A;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #221E22;
-  color: #F7D530;
+  color: #FFFFFF;
 }
 
 .h1{
   font-size: 27px;
   text-align: left;
+  font-family: Cubano-Regular;
 }
 
 .h2{
   font-size: 27px;
   text-align: left;
   margin-left: 10%;
+  font-family: Cubano-Regular;
 }
 
 .h3{
   font-size: 27px;
   text-align: left;
   margin-left: 10%
+  font-family: Cubano-Regular;
 }
 
-.h4{
-  font-size: 27px;
-  text-align: left;
-  margin-left: 30%;
-}
-
-.h5{
-  font-size: 27px;
-  text-align: left;
-  margin-left: 30%;
-}
 
 .contact {
   padding-left: 20px;
@@ -184,4 +206,5 @@ p {
   color: #F7D530;
   background-color: #D8261A;
   font-size: 20px;
+  font-family: Cubano-Regular;
 }
