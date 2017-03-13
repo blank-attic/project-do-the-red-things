@@ -3,23 +3,6 @@ Rouge - #D8261A
 Jaune - #F7D530
 */
 
-/* BASE BORDER IMAGE */
-/* BASE BORDER IMAGE */
-/* BASE BORDER IMAGE */
-
-body {
-  /*border-style: solid;
-  border-width: 27px;
-  -moz-border-image: url(asset/img/fanions_base.png) 27 repeat;
-  -webkit-border-image: url(asset/img/fanions_base.png) 27 repeat;
-  -o-border-image: url(asset/img/fanions_base.png) 27 repeat;
-  border-image: url(asset/img/fanions_base.png) 27 fill repeat;*/
-}
-
-h1 {
-  font-family: Cubano-Regular;
-}
-
 .main-event {
   list-style: none;
   display: -webkit-box;
@@ -29,72 +12,52 @@ h1 {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .cal {
-  width: 50%;
-}
-
-.cal-list {
+  width: 25%;
+  height: 350px;
   margin-top: 20px;
 }
 
-.event-list {
+.incoming {
+  width: 70%;
   list-style-type: none;
 }
 
-.butt1 {
-  width: 225px;
-  height: 20px;
-  border-radius: 8px 0px 0px 8px;
-  border: 1px black solid;
-  padding: 3px 10px;
-  margin-right: -2px;
-}
-
-.butt2 {
-  width: 225px;
-  height: 20px;
-  border-radius: 0px 8px 8px 0px;
-  border: 0.5px black solid;
-  padding: 3px 10px;
-  margin-left: -2px;
-}
-
-
-table {
-  border: 1px solid #999;
-  border-collapse: collapse;
-  font-family: Georgia, Times, serif;
-}
-th {
-  border: 1px solid #999;
-  font-size: 70%;
-  text-transform: uppercase;
-}
-td {
-  border: 1px solid #999;
-  height: 5em;
-  width:5em;
-  padding: 5px;
+.Events {
+  display: inline-block;
   vertical-align: top;
+  padding: 0 0 0 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 10px;
 }
-caption {
-  font-size: 300%;
-  /*font-style: italic;*/
+
+.Events p {
+font-size: 2vh;
 }
-.day {
-  text-align: right;
+
+.newEvents {
+  width: 80%;
+  background-color: #221E22;
+  color: #FFFFFF;
+  margin: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
-.notes {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 80%;
-  text-align: right;
-  padding-left: 20px;
+
+.oldEvents {
+  width: 80%;
+  background-color: #221E22;
+  color: #FFFFFF;
+  margin: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
-.birthday {
-  background-color: #ECE;
-}
-.weekend {
-  background-color: #F3F3F3;
+
+.incoming img {
+  width: 450px
 }

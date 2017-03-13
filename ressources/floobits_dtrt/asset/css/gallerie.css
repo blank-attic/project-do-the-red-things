@@ -1,0 +1,115 @@
+
+@font-face {
+  font-family: Cubano-Regular;
+  src: url("asset/fonts/Cubano/Cubano-Regular.otf") format("opentype");
+}
+
+body {
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: auto;
+  display: flex;
+  background-color: #1F211E;
+  margin-bottom: 10px;
+}
+
+nav {
+  width: 100%;
+}
+
+.main-nav {
+  display: -webkit-flex;
+  display: flex;
+  list-style-type: none;
+  justify-content:flex-end;
+}
+
+.main-nav li:first-child {
+}
+
+.main-nav a {
+  margin-right: 15px;
+  color:  #FFFFFF;
+  display: block;
+  border-bottom: 2px solid #AA2E11;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family : Cubano-Regular;
+}
+
+.logo {
+  width: 290px;
+  height: 80px;
+}
+
+.pic1 {
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  padding-left: 10px;
+}
+
+.pic2 {
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  padding-left: 10px;
+}
+
+.pic3 {
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  padding-left: 10px;
+}
+
+.pic4 {
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  padding-left: 10px;
+}
+
+tr td img{
+-webkit-transition: all .5s cubic-bezier( .6, 2, .4, 1);
+    -moz-transition: all .5s cubic-bezier( .6, 2, .4, 1);
+     -ms-transition: all .5s cubic-bezier( .6, 2, .4, 1);
+      -o-transition: all .5s cubic-bezier( .6, 2, .4, 1);
+         transition: all .5s cubic-bezier( .6, 2, .4, 1);
+}
+
+tr td img:hover{
+-webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+     -ms-transform: scale(1.5);
+      -o-transform: scale(1.5);
+         transform: scale(1.5);
+}
+
+tr:hover td:not(:hover) img{
+-webkit-filter: grayscale(1) blur(5px);
+    -moz-filter: grayscale(1) blur(5px);
+     -ms-filter: grayscale(1) blur(5px);
+      -o-filter: grayscale(1) blur(5px);
+         filter: grayscale(1) blur(5px);
+}
+.contact {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+}
+
+/* IE 6
+* html #footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}*/

@@ -1,6 +1,9 @@
 /*COULEURS ?
 Rouge - #D8261A
 Jaune - #F7D530
+NOIR-VERT - #1F211E
+NOIR-BLEU - #221E22
+ROUGE -  - #AA2E11
 */
 
 @font-face {
@@ -19,21 +22,39 @@ header {
   width: auto;
   display: flex;
   background-color: #1F211E;
-  margin-bottom: 50px;
 }
 
-.jumbotron{
-  margin-left:-10px;
-  margin-top:-10px;
+/*JUMBOTRON*/
+/*JUMBOTRON*/
+/*JUMBOTRON*/
+
+
+#jumbotron{
   height:100%;
   min-width:100%;
   display: flex;
+  position: relative;
+  padding-right: 40px;
+  font-weight: lighter;
 }
 
-.jumbotron img{
+#jumbotron img{
+  max-width: 99%;
+  max-height: 99%;
+margin: auto;
   height:100%;
   width:100%;
   max-width:100%;
+}
+
+#jumbotext {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  text-shadow: 2px 1px black;
+  left: 150px;
+  top: 350px;
+  text-align: left;
 }
 
 /*NAAAVIGATION*/
@@ -42,6 +63,21 @@ header {
 
 nav {
   width: 100%;
+}
+
+h1 {
+}
+
+.titleBig {
+  font-family: Cubano-Regular;
+  border-top: 2px solid #AA2E11;
+  padding-top: 15px;
+  font-size: 4.5vh;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.2vh;
 }
 
 .main-nav {
@@ -74,137 +110,133 @@ nav {
 /* BASE BORDER IMAGE */
 /* BASE BORDER IMAGE */
 
-/*#borderimg {
+/*.borderimg {
 border: 10px solid transparent;
 padding: 15px;
--webkit-border-image: url(asset/img/fanions_base.png) 30 round;
--o-border-image: url(asset/img/fanions_base.png) 30 round;
-border-image: url(asset/img/fanions_base.png) 30 round;
-}*/
-
-
-p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
+border-image-source: url(../img/fanionsbr.png);
+border-image-repeat: round;
+border-image-slice: 30;
+border-image-width: 20px;
+-webkit-border-image: url(../img/fanionsbr.png) 30;
+-o-border-image: url(../img/fanionsbr.png) 30;
+border-image: url(../img/fanionsbr.png) 30;*/
 }
 
-.P-1{
-  /*border-width: 2px;*/
-  /*border-radius: 10px;*/
-  /*border-style: solid;*/
-  /*border-color: #D8261A #D8261A;*/
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  /*margin-left: 20px;
-  margin-right: 20px;*/
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #221E22;
+/*ACTUALITE*/
+/*ACTUALITE*/
+/*ACTUALITE*/
+
+.main {
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.paragraphe {
+  width: 80%;
+  background-color: #1F211E;
   color: #FFFFFF;
+  margin: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
-
-.P-2{
-  /*border-width: 2px;*/
-  /*border-radius: 10px;*/
-  /*border-style: solid;
-  border-color: #D8261A #D8261A;*/
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  /*margin-left: 20px;
-  margin-right: 20px;*/
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #221E22;
-  color: #FFFFFF;
-}
-
-.P-3{
-  /*border-width: 2px;*/
-  /*border-radius: 10px;*/
-  /*border-style: solid;
-  border-color: #D8261A #D8261A;*/
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  /*margin-left: 20px;
-  margin-right: 20px;*/
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #221E22;
-  color: #FFFFFF;
-}
-
-.P-4{
-  border-width: 2px;
-    /*border-radius: 10px;*/;
-  border-style: solid;
-  border-color: #D8261A #D8261A;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  /*margin-left: 20px;
-  margin-right: 20px;*/
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #221E22;
-  color: #FFFFFF;
-}
-
-.P-5{
-  bborder-width: 2px;
-  /*border-radius: 10px;*/
-  border-style: solid;
-  border-color: #D8261A #D8261A;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  /*margin-left: 20px;
-  margin-right: 20px;*/
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #221E22;
-  color: #FFFFFF;
-}
-
-.h1{
-  font-size: 27px;
-  text-align: left;
-  font-family: Cubano-Regular;
-}
-
-.h2{
-  font-size: 27px;
-  text-align: left;
-  margin-left: 10%;
-  font-family: Cubano-Regular;
-}
-
-.h3{
-  font-size: 27px;
-  text-align: left;
-  margin-left: 10%
-  font-family: Cubano-Regular;
-}
-
 
 .contact {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 100%;
+  background-color: #1F211E;
+  padding: 20px;
+  color: #FFFFFF;
   text-align: center;
   display: flow-root;
-  color: #F7D530;
-  background-color: #D8261A;
   font-size: 20px;
   font-family: Cubano-Regular;
+}
+/*QUI SOMMES NOUS*/
+/*QUI SOMMES NOUS*/
+/*QUI SOMMES NOUS*/
+
+.container-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;s
+}
+
+.qui {
+  max-width: 60%;
+  color: #1F211E;
+  margin: 10px;
+  padding: 50px;
+}
+
+.item-center {
+  text-align: center;
+}
+
+/*EVENT*/
+/*EVENT*/
+/*EVENT*/
+
+.main-event {
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cal {
+  width: 25%;
+  height: 350px;
+  margin-top: 20px;
+}
+
+.incoming {
+  width: 70%;
+  list-style-type: none;
+}
+
+.Events {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0 0 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+.Events p {
+  font-size: 2vh;
+}
+
+.newEvents {
+  width: 80%;
+  background-color: #1F211E;
+  color: #FFFFFF;
+  margin: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.oldEvents {
+  width: 80%;
+  background-color: #1F211E;
+  color: #FFFFFF;
+  margin: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.incoming img {
+  width: 450px
 }
