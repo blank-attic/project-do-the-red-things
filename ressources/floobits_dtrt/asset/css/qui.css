@@ -1,3 +1,29 @@
+@font-face {
+  font-family: Cubano-Regular;
+  src: url("../fonts/Cubano/Cubano-Regular.otf") format("opentype");
+}
+
+header {
+  display: inline-flex;
+}
+
+.logo {
+width: 290px;
+height: 80px;
+}
+
+.navbar navbar-inverse navbar-fixed-top {
+  width: 100%;
+  height: 80px;
+  flex-direction: row;
+}
+
+.homenav{
+font-family: Cubano-Regular;
+font-size: 50px;
+color: #FFF;
+}
+
 .container-center {
   display: flex;
   align-items: center;

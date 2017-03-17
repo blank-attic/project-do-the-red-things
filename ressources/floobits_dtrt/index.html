@@ -3,7 +3,10 @@
 <html>
 <head>
   <link rel="stylesheet" href="asset/css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800" rel="stylesheet">
   <meta charset="utf-8">
   <title>
     Do The Red Things Mock-Up
@@ -11,62 +14,141 @@
 </head>
 <body>
   <header>
-    <a href="index.html"><img src="asset/img/DOTHEREDTHING_1F211E.png" alt="logogo" class="logo" /></a>
-    <nav>
-      <ul class="main-nav">
-        <li><a href="index.html">Actualité</a></li>
-        <li><a href="event.html">Nos évènements</a></li>
-        <li><a href="galerie.html">Galerie</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="qui.html">Qui Sommes Nous ?</a></li>
-      </ul>
-    </nav>
+    <div id="custom-bootstrap-menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="#"></a>
+          <a href="#" class="navbar-brand"><img src="asset/img/DOTHEREDTHING_1F211E.png" width ="150" heigth ="100"></a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a id="fontnav" href="index.html">Actualités</a>
+            </li>
+            <li><a id="fontnav" href="galerie.html">Galerie</a>
+            </li>
+            <li><a id="fontnav" href="event.html">Évènement</a>
+            </li>
+            <li><a id="fontnav" href="#">Shop ?</a>
+            </li>
+            <li><a id="fontnav" href="qui.html">Qui Sommes Nous ?</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </header>
   <!-- <div class="jumbohead"> -->
-  <div id="jumbotron">
-    <img src="asset/img/jumbo/dtrt-petitemaison_13.jpg" />
-    <div id="jumbotext">
-      <h1 class="titleBig"> Do The Red Things en quelques mots</h1>
-      <p>Hip ! Hop ! La main dans l'froc ! <br>
-        Hop ! Hip ! La main dans l'slip ! <br>
-        <br>
-        Trouver de vrais quelques mots svp mci.
-      </p>
-    </div>
-  </div>
-
-  <div class="main">
-    <!-- <div id="borderimg">
-  </div> -->
-  <div class="paragraphe">
-    <h1 class="titleBig">bloc party bois de vincennes</h1>
-    <center><img src="asset/img/graff.jpg" width="960px" height="720px"/></center>
-    <p>Sed dapibus metus leo, eu efficitur urna porta eu. Pellentesque lorem turpis, eleifend quis eleifend et, luctus eu lectus. Ut nec aliquet purus, sed aliquam est. Maecenas mattis, ligula quis faucibus mollis, est sem pretium ipsum, eget fringilla lacus metus vel felis. Morbi elementum ultricies ante at maximus. In sapien urna, luctus eu sapien sed, posuere tincidunt quam. Nam turpis est, eleifend a rutrum blandit, faucibus in tortor. Quisque pretium, libero sit amet facilisis tempor, metus risus elementum erat, nec dignissim ligula erat quis felis. Nunc at arcu diam. Integer quis dui vitae metus eleifend posuere. Nunc aliquet bibendum lacus non placerat. Pellentesque rhoncus libero ullamcorper faucibus sodales.</p>
-  </div>
-<!-- <div id="borderimg">
+  <!-- <div id="jumbotron">
+  <img src="asset/img/jumbo/dtrt-petitemaison_13.jpg" />
+  <div id="jumbotext">
+  <h1 class="titleBig"> Do The Red Things en quelques mots</h1>
+  <p>Hip ! Hop ! La main dans l'froc ! <br>
+  Hop ! Hip ! La main dans l'slip ! <br>
+  <br>
+  Trouver de vrais quelques mots svp mci.
+</p>
+</div>
 </div> -->
-<div class="paragraphe">
-  <h1 class="titleBig">open mic babel</h1>
-  <center><img src="asset/img/IMG_6351.jpg" width="518px" height="345px" /></center><br>
-  <p>  Nulla massa erat, ultricies sed nisl at, tempor maximus nisi. Duis lectus orci, scelerisque eu eleifend sit amet, sollicitudin quis tortor. Ut auctor lacus eu malesuada tempus. Praesent elit diam, elementum vitae dui ac, tincidunt semper mi. Duis vitae massa faucibus massa molestie sodales. Sed at erat nisl. Aenean venenatis pellentesque leo, non lacinia lorem scelerisque et. Morbi fermentum nunc fringilla mi lacinia venenatis. Maecenas sagittis efficitur feugiat.</p>
-</div>
 
-<div class="paragraphe">
-  <h1 class="titleBig">Do The Red Things la petite maison</h1>
-  <center><img src="asset/img/dtrt-petitemaison_10.jpg" width="489px" height="326px" /></center><br>
-  <p>Vestibulum at mi scelerisque, tincidunt arcu eget, mattis erat. Integer id ultrices turpis, a elementum diam. Pellentesque laoreet quis elit blandit imperdiet. Nam vel dolor diam. Mauris elementum ipsum sit amet libero bibendum elementum. Duis lorem purus, scelerisque ut consequat sit amet, viverra vel felis. Nullam magna neque, posuere nec nisl quis, cursus malesuada elit. Praesent ipsum sem, cursus at justo sed, dapibus interdum felis. Etiam a ligula at massa egestas aliquet. Suspendisse tempor dolor ut luctus dignissim. Nulla luctus viverra dignissim. Quisque a tellus sed nisl ultrices fringilla. Nullam risus eros, dapibus eget mattis et, varius et augue. Ut pretium finibus feugiat. Nulla dui orci, auctor non consequat eu, elementum eu justo.
-    Morbi porta ipsum lacus, vitae venenatis metus ullamcorper ac</p>
-  </div>
-</div>
+<div class="container">
+  <div class="row">
+    <!-- Carousel -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img class="img-responsive"src="asset/img/jumbo/dtrt-petitemaison_13.jpg" alt="First slide">
+          <!-- Static Header -->
+          <div class="header-text hidden-xs">
+            <div class="col-md-12 text-center">
+              <h2>
+                <span>DO THE RED THINGS MOCK-UP</span>
+              </h2>
+              <br>
+              <h3>
+                <span>Hip ! Hop ! La main dans l'froc !
+                Hop ! Hip ! La main dans l'slip ! </span>
+              </h3>
+              <br>
+              </div>
+            </div><!-- /header-text -->
+          </div>
+          <div class="item">
+            <img src="asset/img/jumbo/IMG_6351.jpg" alt="Second slide">
+            <!-- Static Header -->
+            <div class="header-text hidden-xs">
+              <div class="col-md-12 text-center">
+                <h2>
+                  <span>DO THE RED THINGS MOCK-UP</span>
+                </h2>
+                <br>
+                <h3>
+                  <span>Hip ! Hop ! La main dans l'froc !
+                  Hop ! Hip ! La main dans l'slip ! </span>
+                </h3>
+                <br>
+                </div>
+              </div><!-- /header-text -->
+            </div>
+            <div class="item">
+              <img src="asset/img/jumbo/dtrt-petitemaison_10.jpg" alt="Third slide">
+              <!-- Static Header -->
+              <div class="header-text hidden-xs">
+                <div class="col-md-12 text-center">
+                  <h2>
+                    <span>Welcome to LOREM IPSUM</span>
+                  </h2>
+                  <br>
+                  <h3>
+                    <span></span>
+                  </h3>
+                  <br>
+                  </div>
+                </div><!-- /header-text -->
+              </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div><!-- /carousel -->
+        </div>
+      </div>
 
+      <div class="container">
+      	<div class="span8">
+              <h1>Article name first</h1>
+              <p class="pBlack">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum ex eget porttitor sollicitudin. Morbi cursus tempor placerat. Pellentesque suscipit tortor in orci pretium, ac facilisis ex pretium. Fusce hendrerit orci diam, vitae tristique quam porttitor eu. Donec ligula orci, ultricies in sagittis non, porta sed lorem. Aenean interdum posuere mattis. Curabitur dignissim dictum quam, vitae malesuada velit tristique a. </p>
+              <div>
+                  <div class="more label"><a href="#">Read more</a></div>
+                  <div class="tags">
+                      <span class="btn-info"><a href="#">energy</a></span><span class="btn-info"><a href="#">reality</a></span><span class="btn-info"><a href="#">world</a></span>
+                  </div>
+              </div>
+              <div class="clear"></div>
+              <hr>
+              <h1>Article name second</h1>
+              <p class="pBlack">Sed interdum massa ac pretium faucibus. Integer semper euismod lorem faucibus molestie. Aenean luctus ut metus eget dignissim. Sed tincidunt augue non elementum pharetra. Suspendisse non feugiat urna. Etiam egestas neque euismod neque sollicitudin consectetur. Fusce facilisis augue a velit porta scelerisque. Sed mattis justo sapien. Sed ultrices lectus diam, id vestibulum ante finibus a. </p>
+              <div>
+                  <div class="more label"><a href="#">Read more</a></div>
+                  <div class="tags">
+                      <span class="btn-info"><a href="#"></a>energy</a></span><span class="btn-info"><a href="#">reality</a></span><span class="btn-info"><a href="#">world</a></span>
+                  </div>
+              </div>
+              <hr>
+          </div>
+      </div>
 
-<footer class="contact">CONTACT</footer>
-</body>
-</html>
- ultrices turpis, a elementum diam. Pellentesque laoreet quis elit blandit imperdiet. Nam vel dolor diam. Mauris elementum ipsum sit amet libero bibendum elementum. Duis lorem purus, scelerisque ut consequat sit amet, viverra vel felis. Nullam magna neque, posuere nec nisl quis, cursus malesuada elit. Praesent ipsum sem, cursus at justo sed, dapibus interdum felis. Etiam a ligula at massa egestas aliquet. Suspendisse tempor dolor ut luctus dignissim. Nulla luctus viverra dignissim. Quisque a tellus sed nisl ultrices fringilla. Nullam risus eros, dapibus eget mattis et, varius et augue. Ut pretium finibus feugiat. Nulla dui orci, auctor non consequat eu, elementum eu justo.
-      Morbi porta ipsum lacus, vitae venenatis metus ullamcorper ac</p>
-    </div>
-
-    <footer class="contact"> contact </footer>
-  </body>
-  </html>
+      <footer class="contact"><a href="contact.html">CONTACT</a></footer>
+    </body>
+    </html>
