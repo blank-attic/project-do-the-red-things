@@ -12,6 +12,7 @@
 Rouge - #D8261A
 Jaune - #F7D530
 NOIR-VERT - #1F211E
+NOIR-BLEU-NAVBAR - #222222
 NOIR-BLEU - #221E22
 ROUGE -  - #AA2E11
 */
@@ -36,9 +37,11 @@ header {
   width: auto;
   display: inline-flex;
   background-color: #1F211E;
+  margin-bottom: 120px;
 }
 
 .contact {
+  margin-top: 20px;
   width: 100% !important;
   background-color: #1F211E;
   padding: 20px;
@@ -112,150 +115,43 @@ p {
 /*3. JUMBOTRON*/
 /*3. JUMBOTRON*/
 
-.container {
-  margin-top: 150px;
-}
-
-/* Carousel Styles */
-.carousel-indicators .active {
-  background-color: #2980b9;
-}
-
-.carousel-inner img {
-  width: 100%;
-  max-height: 460px
-}
-
-.carousel-control {
-  width: 0;
-}
-
-.carousel-control.left,
-.carousel-control.right {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  background-image: none;
-  background-repeat: no-repeat;
-  text-shadow: none;
-}
-
-.carousel-control.left span {
-  padding: 15px;
-}
-
-.carousel-control.right span {
-  padding: 15px;
-}
-
-.carousel-control .glyphicon-chevron-left,
-.carousel-control .glyphicon-chevron-right,
-.carousel-control .icon-prev,
-.carousel-control .icon-next {
+.main-text
+{
   position: absolute;
-  top: 45%;
-  z-index: 5;
-  display: inline-block;
-}
-
-.carousel-control .glyphicon-chevron-left,
-.carousel-control .icon-prev {
-  left: 0;
-}
-
-.carousel-control .glyphicon-chevron-right,
-.carousel-control .icon-next {
-  right: 0;
-}
-
-.carousel-control.left span,
-.carousel-control.right span {
-}
-
-.carousel-control.left span:hover,
-.carousel-control.right span:hover {
-  opacity: .7;
-  filter: alpha(opacity=70);
-}
-
-/* Carousel Header Styles */
-.header-text {
-  position: absolute;
-  top: 20%;
-  left: 1.8%;
-  right: auto;
+  top: 50px;
   width: 96.66666666666666%;
-  color: #fff;
+  color: #FFF;
 }
-
-.header-text h2 {
-  text-shadow: 2px 1px black;
-  font-size: 40px;
-}
-
-.header-text h2 span {
-  padding: 10px;
-  text-shadow: 2px 1px black;
-}
-
-.header-text h3 span {
-  padding: 15px;
-  text-shadow: 2px 1px black;
-}
-
-.btn-min-block {
+.btn-min-block
+{
   min-width: 170px;
   line-height: 26px;
 }
-
-.btn-theme {
-  color: #fff;
+.btn-clear
+{
+  color: #FFF;
   background-color: transparent;
-  border: 2px solid #fff;
+  border-color: #FFF;
   margin-right: 15px;
 }
-
-.btn-theme:hover {
+.btn-clear:hover
+{
   color: #000;
-  background-color: #fff;
-  border-color: #fff;
+  background-color: #FFF;
 }
 
-/*#jumbotron{
-height:100%;
-min-width:100%;
-display: flex;
-position: relative;
+.shadowTitre {
+  text-shadow: 4px 2px 2px #000000;
 }
-
-#jumbotron img{
-max-width: 99%;
-max-height: 99%;
-margin: auto;
-height:100%;
-width:100%;
-}
-
-#jumbotext {
-z-index: 100;
-position: absolute;
-color: white;
-text-shadow: 2px 1px black;
-left: 130px;
-top: 200px;
-text-align: left;
-}
-
-#jumbotext p {
-font-style: italic;
-font-weight: 100;
-font-size: 3vh;
-}*/
-
 /*4. NAVBAR*/
 /*4. NAVBAR*/
-.logo {
-  width: 290px;
-  height: 80px;
+
+.navbar-brand {
+  background: url(../img/DOTHEREDTHING_1F211E.png) no-repeat left center;
+  height: 103px !important;
+  width: 400px !important;
+  padding: 0px !important;
+  margin: -25px !important;
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
@@ -303,63 +199,12 @@ font-size: 3vh;
   padding-top: 25px;
 }
 
-.navbar-brand{
-}
-
 #fontnav {
   font-family: Cubano-Regular;
-  font-size: 25px;
+  font-size: 20px;
   color: #FFFFFF !important;
-}
-
-/*div ul li a {
-  border-bottom: 2px solid #AA2E11;
-}*/
-
-/*.img-responsive{
-width: 75px;
-height: 25px;
-padding-bottom: 25px;
-padding-left: 10px;
-padding-top: 25px;
-}
-
-/*.main-nav {
-display: -webkit-flex;
-display: flex;
-list-style-type: none;
-justify-content:flex-end;
-}
-
-.main-nav li:first-child {
-}
-
-.main-nav a {
-margin-right: 15px;
-color:  #FFFFFF;
-display: block;
-border-bottom: 2px solid #AA2E11;
-padding: 10px;
-text-decoration: none;
-font-size: 20px;
-font-family : Cubano-Regular;
-}
-
-
-/* BASE BORDER IMAGE */
-/* BASE BORDER IMAGE */
-/* BASE BORDER IMAGE */
-
-/*.borderimg {
-border: 10px solid transparent;
-padding: 15px;
-border-image-source: url(../img/fanionsbr.png);
-border-image-repeat: round;
-border-image-slice: 30;
-border-image-width: 20px;
--webkit-border-image: url(../img/fanionsbr.png) 30;
--o-border-image: url(../img/fanionsbr.png) 30;
-border-image: url(../img/fanionsbr.png) 30;*/
+  border-bottom: 2px solid #AA2E11 !important;
+  padding-bottom: 5px !important;
 }
 
 /*5. PAGE ACTUALITÉ*/
@@ -376,17 +221,6 @@ border-image: url(../img/fanionsbr.png) 30;*/
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
   flex-wrap: wrap;
-}
-
-.paragraphe {
-  background-color: #1F211E;
-  color: #FFFFFF;
-  margin: 2em;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  border-radius: 10px;
 }
 
 /*6. PAGE EVENT*/
@@ -477,27 +311,27 @@ border-image: url(../img/fanionsbr.png) 30;*/
 /*ARTICLES*/
 
 .clear {
-    clear:both;
+  clear:both;
 }
 .btn-info {
-    margin-right:15px;
-    text-transform:uppercase;
-    padding:10px;
-    display:block;
-    float:left;
-    background-color: #D8261A !important;
+  margin-right:15px;
+  text-transform:uppercase;
+  padding:10px;
+  display:block;
+  float:left;
+  background-color: #D8261A !important;
 }
 .btn-info a {
-    display:block;
-    text-decoration:none;
-    width:100%;
-    height:100%;
-    color:#fff;
-    background-color: #D8261A !important;
+  display:block;
+  text-decoration:none;
+  width:100%;
+  height:100%;
+  color:#fff;
+  background-color: #D8261A !important;
 }
 .more.label {
-    float:right;
-    color: #D8261A !important;
+  float:right;
+  color: #D8261A !important;
 }
 
 .more.label a {

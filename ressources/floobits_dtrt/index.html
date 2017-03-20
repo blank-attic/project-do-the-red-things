@@ -3,8 +3,9 @@
 <html>
 <head>
   <link rel="stylesheet" href="asset/css/main.css">
-  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800" rel="stylesheet">
   <meta charset="utf-8">
@@ -12,141 +13,97 @@
     Do The Red Things Mock-Up
   </title>
 </head>
+
 <body>
   <header>
     <div id="custom-bootstrap-menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header"><a class="navbar-brand" href="#"></a>
-          <a href="#" class="navbar-brand"><img src="asset/img/DOTHEREDTHING_1F211E.png" width ="150" heigth ="100"></a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
           </button>
         </div>
         <div class="collapse navbar-collapse navbar-menubuilder">
           <ul class="nav navbar-nav navbar-right">
-            <li><a id="fontnav" href="index.html">Actualités</a>
-            </li>
-            <li><a id="fontnav" href="galerie.html">Galerie</a>
-            </li>
-            <li><a id="fontnav" href="event.html">Évènement</a>
-            </li>
-            <li><a id="fontnav" href="#">Shop ?</a>
-            </li>
-            <li><a id="fontnav" href="qui.html">Qui Sommes Nous ?</a>
-            </li>
+            <li><a id="fontnav" href="index.html">Actualités</a></li>
+            <li><a id="fontnav" href="galerie.html">Galerie</a></li>
+            <li><a id="fontnav" href="event.html">Évènements</a></li>
+            <!-- <li><a id="fontnav" href="#">Shop ?</a></li> -->
+            <li><a id="fontnav" href="qui.html">Qui Sommes Nous ?</a></li>
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <!-- <div class="jumbohead"> -->
-  <!-- <div id="jumbotron">
-  <img src="asset/img/jumbo/dtrt-petitemaison_13.jpg" />
-  <div id="jumbotext">
-  <h1 class="titleBig"> Do The Red Things en quelques mots</h1>
-  <p>Hip ! Hop ! La main dans l'froc ! <br>
-  Hop ! Hip ! La main dans l'slip ! <br>
-  <br>
-  Trouver de vrais quelques mots svp mci.
-</p>
-</div>
-</div> -->
-
-<div class="container">
-  <div class="row">
-    <!-- Carousel -->
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img class="img-responsive"src="asset/img/jumbo/dtrt-petitemaison_13.jpg" alt="First slide">
-          <!-- Static Header -->
-          <div class="header-text hidden-xs">
-            <div class="col-md-12 text-center">
-              <h2>
-                <span>DO THE RED THINGS MOCK-UP</span>
-              </h2>
-              <br>
-              <h3>
-                <span>Hip ! Hop ! La main dans l'froc !
-                Hop ! Hip ! La main dans l'slip ! </span>
-              </h3>
-              <br>
-              </div>
-            </div><!-- /header-text -->
-          </div>
-          <div class="item">
-            <img src="asset/img/jumbo/IMG_6351.jpg" alt="Second slide">
-            <!-- Static Header -->
-            <div class="header-text hidden-xs">
-              <div class="col-md-12 text-center">
-                <h2>
-                  <span>DO THE RED THINGS MOCK-UP</span>
-                </h2>
-                <br>
-                <h3>
-                  <span>Hip ! Hop ! La main dans l'froc !
-                  Hop ! Hip ! La main dans l'slip ! </span>
-                </h3>
-                <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li></ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="asset/img/carousel/dtrt-petitemaison_13.jpg" alt="First slide">
+                <div class="carousel-caption">
+                  <h3>First slide</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
-              </div><!-- /header-text -->
-            </div>
-            <div class="item">
-              <img src="asset/img/jumbo/dtrt-petitemaison_10.jpg" alt="Third slide">
-              <!-- Static Header -->
-              <div class="header-text hidden-xs">
-                <div class="col-md-12 text-center">
-                  <h2>
-                    <span>Welcome to LOREM IPSUM</span>
-                  </h2>
-                  <br>
-                  <h3>
-                    <span></span>
-                  </h3>
-                  <br>
-                  </div>
-                </div><!-- /header-text -->
+              </div>
+              <div class="item">
+                <img src="asset/img/carousel/dtrt-petitemaison_67.jpg" alt="Second slide">
+                <div class="carousel-caption">
+                  <h3>Second slide</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="asset/img/carousel/dtrt-petitemaison_06.jpg" alt="Third slide">
+                <div class="carousel-caption">
+                  <h3>Third slide</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
               </div>
             </div>
-            <!-- Controls -->
             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-          </div><!-- /carousel -->
+              <span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control"
+              href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="main-text hidden-xs">
+              <div class="col-md-12 text-center">
+                <h1 class="titleBig shadowTitre" style="text-shadow: 4px 2px 2px #000000">DO THE RED THINGS MOCK->UP</h1>
+                <h3 class="shadowTitre">Il marche à peine et veut des bottes de sept lieues.</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <div id="push"></div>
+
+
 
       <div class="container">
-      	<div class="span8">
-              <h1>Article name first</h1>
-              <p class="pBlack">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum ex eget porttitor sollicitudin. Morbi cursus tempor placerat. Pellentesque suscipit tortor in orci pretium, ac facilisis ex pretium. Fusce hendrerit orci diam, vitae tristique quam porttitor eu. Donec ligula orci, ultricies in sagittis non, porta sed lorem. Aenean interdum posuere mattis. Curabitur dignissim dictum quam, vitae malesuada velit tristique a. </p>
-              <div>
-                  <div class="more label"><a href="#">Read more</a></div>
-                  <div class="tags">
-                      <span class="btn-info"><a href="#">energy</a></span><span class="btn-info"><a href="#">reality</a></span><span class="btn-info"><a href="#">world</a></span>
-                  </div>
-              </div>
-              <div class="clear"></div>
-              <hr>
-              <h1>Article name second</h1>
-              <p class="pBlack">Sed interdum massa ac pretium faucibus. Integer semper euismod lorem faucibus molestie. Aenean luctus ut metus eget dignissim. Sed tincidunt augue non elementum pharetra. Suspendisse non feugiat urna. Etiam egestas neque euismod neque sollicitudin consectetur. Fusce facilisis augue a velit porta scelerisque. Sed mattis justo sapien. Sed ultrices lectus diam, id vestibulum ante finibus a. </p>
-              <div>
-                  <div class="more label"><a href="#">Read more</a></div>
-                  <div class="tags">
-                      <span class="btn-info"><a href="#"></a>energy</a></span><span class="btn-info"><a href="#">reality</a></span><span class="btn-info"><a href="#">world</a></span>
-                  </div>
-              </div>
-              <hr>
+        <div class="span8">
+          <h1>Article name first</h1>
+          <p class="pBlack">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum ex eget porttitor sollicitudin. Morbi cursus tempor placerat. Pellentesque suscipit tortor in orci pretium, ac facilisis ex pretium. Fusce hendrerit orci diam, vitae tristique quam porttitor eu. Donec ligula orci, ultricies in sagittis non, porta sed lorem. Aenean interdum posuere mattis. Curabitur dignissim dictum quam, vitae malesuada velit tristique a. </p>
+          <div>
+            <div class="more label"><a href="#">Read more</a></div>
+            <div class="tags">
+              <span class="btn-info"><a href="#">energy</a></span><span class="btn-info"><a href="#">reality</a></span><span class="btn-info"><a href="#">world</a></span>
+            </div>
           </div>
+          <div class="clear"></div>
+          <hr>
+          <h1>Article name second</h1>
+          <p class="pBlack">Sed interdum massa ac pretium faucibus. Integer semper euismod lorem faucibus molestie. Aenean luctus ut metus eget dignissim. Sed tincidunt augue non elementum pharetra. Suspendisse non feugiat urna. Etiam egestas neque euismod neque sollicitudin consectetur. Fusce facilisis augue a velit porta scelerisque. Sed mattis justo sapien. Sed ultrices lectus diam, id vestibulum ante finibus a. </p>
+          <div>
+            <div class="more label"><a href="#">Read more</a></div>
+            <div class="tags">
+              <span class="btn-info"><a href="#"></a>energy</a></span><span class="btn-info"><a href="#">reality</a></span><span class="btn-info"><a href="#">world</a></span>
+            </div>
+          </div>
+          <hr>
+        </div>
       </div>
 
       <footer class="contact"><a href="contact.html">CONTACT</a></footer>
