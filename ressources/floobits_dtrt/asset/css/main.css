@@ -37,7 +37,11 @@ header {
   width: auto;
   display: inline-flex;
   background-color: #1F211E;
-  margin-bottom: 120px;
+  /*margin-bottom: 120px;*/
+}
+
+.container {
+  margin-top: 120px;
 }
 
 .contact {
@@ -145,14 +149,26 @@ p {
   text-shadow: 4px 2px 2px #000000;
 }
 /*4. NAVBAR*/
-/*4. NAVBAR*/
+.navbar{
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-top: 25px;
+}
 
-.navbar-brand {
-  background: url(../img/DOTHEREDTHING_1F211E.png) no-repeat left center;
-  height: 103px !important;
-  width: 400px !important;
-  padding: 0px !important;
-  margin: -25px !important;
+#fontnav {
+  font-family: Cubano-Regular;
+  font-size: 20px;
+  color: #FFFFFF !important;
+  border-bottom: 2px solid #AA2E11 !important;
+}
+
+a.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+
+a img {
+  width: 200%;
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
@@ -165,6 +181,7 @@ p {
   border-radius: 4px;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+  padding: 0;
   color: rgba(119, 119, 119, 1);
   background-color: rgba(248, 248, 248, 0);
 }
@@ -194,20 +211,6 @@ p {
   background-color: #888;
 }
 
-.navbar{
-  padding-bottom: 25px;
-  padding-left: 10px;
-  padding-top: 25px;
-}
-
-#fontnav {
-  font-family: Cubano-Regular;
-  font-size: 20px;
-  color: #FFFFFF !important;
-  border-bottom: 2px solid #AA2E11 !important;
-  padding-bottom: 5px !important;
-}
-
 /*5. PAGE ACTUALITÉ*/
 /*5. PAGE ACTUALITÉ*/
 /*5. PAGE ACTUALITÉ*/
@@ -229,7 +232,7 @@ p {
 /*6. PAGE EVENT*/
 
 .main-event {
-  margin-top: 20px;
+  margin-top: 100px;
   list-style: none;
   display: -webkit-box;
   display: -moz-box;
