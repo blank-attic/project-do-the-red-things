@@ -46,7 +46,7 @@ header {
 
 .contact {
   bottom: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100% !important;
   background-color: #1F211E;
   padding: 20px;
@@ -75,6 +75,7 @@ h1 {
 }
 
 h2 {
+  padding-top: 5px;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   border-top: 2px solid #AA2E11;
@@ -231,7 +232,12 @@ a img {
 /*6. PAGE EVENT*/
 /*6. PAGE EVENT*/
 
-.main-event {
+.event {
+  margin-top: 130px!important;
+  background-color: #fff;
+}
+
+/*.main-event {
   margin-top: 100px;
   list-style: none;
   display: -webkit-box;
@@ -291,7 +297,7 @@ a img {
 
 .incoming img {
   width: 450px
-}
+}*/
 
 
 /*7. PAGE QUI SOMMES NOUS*/
@@ -333,6 +339,15 @@ a img {
   color:#fff;
   background-color: #D8261A !important;
 }
+
+.label-info {
+  text-decoration:none;
+  width:100%;
+  height:100%;
+  color:#fff;
+  background-color: #D8261A !important;
+}
+
 .more.label {
   float:right;
   color: #D8261A !important;
