@@ -1,62 +1,76 @@
-<?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li></ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="asset/img/carousel/dtrt-petitemaison_13.jpg" alt="First slide">
+							<div class="carousel-caption">
+								<h3>First slide</h3>
+								<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="asset/img/carousel/dtrt-petitemaison_67.jpg" alt="Second slide">
+							<div class="carousel-caption">
+								<h3>Second slide</h3>
+								<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="asset/img/carousel/dtrt-petitemaison_06.jpg" alt="Third slide">
+							<div class="carousel-caption">
+								<h3>Third slide</h3>
+								<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+							</div>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control"
+						href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+					</div>
+					<div class="main-text hidden-xs">
+						<div class="col-md-12 text-center">
+							<h1 class="titleBig shadowTitre" style="text-shadow: 4px 2px 2px #000000">DO THE RED THINGS MOCK->UP</h1>
+							<h3 class="shadowTitre">Il marche à peine et veut des bottes de sept lieues.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="push"></div> -->
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
+		<!--<div class="container">
+			<div class="span8">
+				<h1>Article name first</h1>
+				<p class="pBlack">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum ex eget porttitor sollicitudin. Morbi cursus tempor placerat. Pellentesque suscipit tortor in orci pretium, ac facilisis ex pretium. Fusce hendrerit orci diam, vitae tristique quam porttitor eu. Donec ligula orci, ultricies in sagittis non, porta sed lorem. Aenean interdum posuere mattis. Curabitur dignissim dictum quam, vitae malesuada velit tristique a. </p>
+				<div>
+					<div class="more label"><a href="#">Read more</a></div>
+					<div class="tags">
+						<span class="btn-info"><a href="#">energy</a></span><span class="btn-info"><a href="#">reality</a></span><span class="btn-info"><a href="#">world</a></span>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<hr>
+				<h1>Article name second</h1>
+				<p class="pBlack">Sed interdum massa ac pretium faucibus. Integer semper euismod lorem faucibus molestie. Aenean luctus ut metus eget dignissim. Sed tincidunt augue non elementum pharetra. Suspendisse non feugiat urna. Etiam egestas neque euismod neque sollicitudin consectetur. Fusce facilisis augue a velit porta scelerisque. Sed mattis justo sapien. Sed ultrices lectus diam, id vestibulum ante finibus a. </p>
+				<div>
+					<div class="more label"><a href="#">Read more</a></div>
+					<div class="tags">
+						<span class="btn-info"><a href="#"></a>energy</a></span><span class="btn-info"><a href="#">reality</a></span><span class="btn-info"><a href="#">world</a></span>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<hr>
+			</div>
+		</div> -->
 
-			<?php
-			// Start the loop.
-			while ( have_posts() ) : the_post();
-
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
-
-			// End the loop.
-			endwhile;
-
-			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentysixteen' ),
-				'next_text'          => __( 'Next page', 'twentysixteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
-			) );
-
-		// If no content, include the "No posts found" template.
-		else :
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+		<?php get_footer(); ?>
