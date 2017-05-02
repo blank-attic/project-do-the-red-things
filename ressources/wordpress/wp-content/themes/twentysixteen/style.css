@@ -194,14 +194,18 @@ width: 100%;
 }
 
 
-.logo{
-  width: 120px;
-  height: 50px;
+.img-responsive {
+  width: 150px;
+  height: 80px;
 }
 
 
 a img {
 width: 20%;
+}
+
+.navbar-inverse {
+background-color: #222;
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
@@ -243,7 +247,12 @@ width: 20%;
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
   background-color: #888;
 }
-
+div#custom-bootstrap-menu.menu.navbar.navbar-inverse.navbar-fixed-top{
+  background-color: #000000;
+}
+div#collapse.navbar-collapse.navbar-menubuilder{
+    background-color: #000000;
+}
 /*5. PAGE ACTUALITÉ*/
 /*5. PAGE ACTUALITÉ*/
 /*5. PAGE ACTUALITÉ*/
